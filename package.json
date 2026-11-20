@@ -1,0 +1,28 @@
+{
+  "name": "cels-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "手绘动画线稿分层与上色工具（TypeScript + WebGL2）",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:perf": "cross-env RUN_PERF=1 vitest run",
+    "bench": "vitest bench",
+    "gen:samples": "tsx scripts/gen-samples.ts"
+  },
+  "devDependencies": {
+    "@types/pngjs": "^6.0.5",
+    "cross-env": "^7.0.3",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  }
+}
